@@ -5,7 +5,7 @@ namespace ChurchKid.Data.Entities
     public interface IDescriptiveEntity
     {
 
-        public string Description { get; set; }
+        string Description { get; set; }
     
     }
 }

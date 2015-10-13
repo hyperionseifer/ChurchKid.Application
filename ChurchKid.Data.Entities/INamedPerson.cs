@@ -5,13 +5,13 @@ namespace ChurchKid.Data.Entities
     public interface INamedPerson
     {
 
-        public string FirstName { get; set; }
+        string FirstName { get; set; }
 
-        public string MiddleName { get; set; }
+        string MiddleName { get; set; }
 
-        public string LastName { get; set; }
+        string LastName { get; set; }
 
-        public string NickName { get; set; }
+        string NickName { get; set; }
     
     }
 }

@@ -5,9 +5,9 @@ namespace ChurchKid.Data.Entities
     public interface ICreatedEntity
     {
 
-        public DateTime DateCreated { get; set; }
+        DateTime DateCreated { get; set; }
 
-        public int CreatedById { get; set; }
+        int CreatedById { get; set; }
     
     }
 }

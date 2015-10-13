@@ -48,33 +48,36 @@ namespace ChurchKid.Data.Entities.SaintProfile
         public string BirthPlace { get; set; }
 
         [MaxLength(10)]
-        public int BldgNo { get; set; }
+        public int HomeBldgNo { get; set; }
         
         [MaxLength(10)]
-        public string HouseNo { get; set; }
+        public string HomeNo { get; set; }
 
         [MaxLength(100)]
-        public string Bldg { get; set; }
+        public string HomeBldg { get; set; }
 
         [MaxLength(100)]
-        public string Street { get; set; }
+        public string HomeStreet { get; set; }
 
         [MaxLength(100)]
-        public string Subdivision { get; set; }
+        public string HomeSubdivision { get; set; }
 
         [MaxLength(100)]
-        public string District { get; set; }
+        public string HomeDistrict { get; set; }
 
         [MaxLength(100)]
-        public int City { get; set; }
+        public int HomeCity { get; set; }
 
         [MaxLength(100)]
-        public int Region { get; set; }
+        public int HomeRegion { get; set; }
 
-        [ForeignKey("Country")]
-        public int CountryId { get; set; }
+        [ForeignKey("HomeCountry")]
+        public int HomeCountryId { get; set; }
 
-        public virtual Country Country { get; set; }
+        public virtual Country HomeCountry { get; set; }
+
+        [MaxLength(10)]
+        public string HomeZip { get; set; }
 
         [MaxLength(50), Phone]
         public string PhoneNo { get; set; }

@@ -12,7 +12,7 @@ namespace ChurchKid.Data.Entities.SaintProfile
         public int SaintEducationalBackgroundId { get; set; }
 
         [ForeignKey("Saint")]
-        public int Saint { get; set; }
+        public int SaintId { get; set; }
 
         public virtual Saint Saint { get; set; }
 

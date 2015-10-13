@@ -25,7 +25,6 @@ namespace ChurchKid.Data.Entities.Training
         [Required, MaxLength(15)]
         public string Status { get; set; }
 
-        [MaxLength(255)]
         public string Remarks { get; set; }
 
         public DateTime LeaveDate { get; set; }

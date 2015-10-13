@@ -5,7 +5,7 @@ namespace ChurchKid.Data.Entities
     public interface ITimestampedEntity
     {
 
-        public DateTime LastModified { get; set; }
+        DateTime LastModified { get; set; }
     
     }
 }
