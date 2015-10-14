@@ -47,7 +47,10 @@ namespace ChurchKid.Common.Tests
             for (var e = 1; e <= errorEntries; e++)
                 Logger.Write(new Exception("Sample error " + e));
 
-            var infoSearchResults = (List<LogEntry>) Logger.GetInfoEntries();
+            var logEntries = (List<LogEntry>)Logger.GetLogs();
+            Assert.AreEqual(infoEntries + errorEntries, logEntries.Count);
+
+            var infoSearchResults = (List<LogEntry>)Logger.GetInfoEntries();
             Assert.AreEqual(infoEntries, infoSearchResults.Count);
 
             var errorSearchResults = (List<LogEntry>)Logger.GetErrorEntries();

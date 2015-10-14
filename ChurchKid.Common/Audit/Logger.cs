@@ -145,6 +145,11 @@ namespace ChurchKid.Common.Audit
             return GetLogs(string.Format("[Type] = '{0}'", LogEntryType.Warning));
         }
 
+        public static IEnumerable<LogEntry> GetLogs()
+        {
+            return GetLogs(string.Empty);
+        }
+
         public static IEnumerable<LogEntry> GetLogs(string filter)
         {
             var logEntries = new List<LogEntry>();
@@ -220,16 +225,19 @@ namespace ChurchKid.Common.Audit
                 StackTrace = logEntry.StackTrace
             };
 
-            try
+            using (logTable)
             {
-                DataRow newRow = logTable.Rows.Add(null, logEntry.DateAndTime, logEntry.Type, logEntry.Details, logEntry.StackTrace);
-                logTable.AcceptChanges();
-                logTable.WriteXml(LogFile, XmlWriteMode.WriteSchema);
-                newLogEntry.Id = Convert.ToInt32(newRow["Id"]);
-            }
-            catch
-            {
-                return null;
+                try
+                {
+                    DataRow newRow = logTable.Rows.Add(null, logEntry.DateAndTime, logEntry.Type, logEntry.Details, logEntry.StackTrace);
+                    logTable.AcceptChanges();
+                    logTable.WriteXml(LogFile, XmlWriteMode.WriteSchema);
+                    newLogEntry.Id = Convert.ToInt32(newRow["Id"]);
+                }
+                catch
+                {
+                    return null;
+                }
             }
 
             return newLogEntry;
