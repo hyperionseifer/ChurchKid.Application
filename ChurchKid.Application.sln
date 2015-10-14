@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurchKid.Data.Entities", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurchKid.Common", "ChurchKid.Common\ChurchKid.Common.csproj", "{EB7D5950-7593-4133-9B4D-C8FED7BCC3C5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E36AC08F-D144-47CE-8764-F9BC2284F273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurchKid.Common.Tests", "ChurchKid.Common.Tests\ChurchKid.Common.Tests.csproj", "{CC7FEF4B-B6EA-4449-BD29-130C0C4A9584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +25,15 @@ Global
 		{EB7D5950-7593-4133-9B4D-C8FED7BCC3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB7D5950-7593-4133-9B4D-C8FED7BCC3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB7D5950-7593-4133-9B4D-C8FED7BCC3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC7FEF4B-B6EA-4449-BD29-130C0C4A9584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7FEF4B-B6EA-4449-BD29-130C0C4A9584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7FEF4B-B6EA-4449-BD29-130C0C4A9584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7FEF4B-B6EA-4449-BD29-130C0C4A9584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC7FEF4B-B6EA-4449-BD29-130C0C4A9584} = {E36AC08F-D144-47CE-8764-F9BC2284F273}
 	EndGlobalSection
 EndGlobal

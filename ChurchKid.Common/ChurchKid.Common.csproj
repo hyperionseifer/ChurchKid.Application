@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audit\LogEntry.cs" />
+    <Compile Include="Audit\LogEntryType.cs" />
+    <Compile Include="Audit\Logger.cs" />
     <Compile Include="UserActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,7 +10,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Add"];
+                return (ConfigurationManager.AppSettings["UserActions.Add"] ?? "Add");
             }
         }
 
@@ -18,7 +18,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Edit"];
+                return (ConfigurationManager.AppSettings["UserActions.Edit"] ?? "Edit");
             }
         }
 
@@ -26,7 +26,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Delete"];
+                return (ConfigurationManager.AppSettings["UserActions.Delete"] ?? "Delete");
             }
         }
 
@@ -34,7 +34,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Print"];
+                return (ConfigurationManager.AppSettings["UserActions.Print"] ?? "Print");
             }
         }
 
@@ -42,7 +42,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Approve"];
+                return (ConfigurationManager.AppSettings["UserActions.Approve"] ?? "Approve");
             }
         }
 
@@ -50,7 +50,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Decline"];
+                return (ConfigurationManager.AppSettings["UserActions.Decline"] ?? "Decline");
             }
         }
 
@@ -58,7 +58,7 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Draft"];
+                return (ConfigurationManager.AppSettings["UserActions.Draft"] ?? "Draft");
             }
         }
 
