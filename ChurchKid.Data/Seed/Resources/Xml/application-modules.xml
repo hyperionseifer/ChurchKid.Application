@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<applicationModules>
+
+	<applicationModule>
+		<group>Administration</group>
+		<name>System Users</name>
+	</applicationModule>
+	
+	<applicationModule>
+		<group>Administration</group>
+		<name>Activity Logs</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Countries</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Islands</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Regions</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Locality Groups</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Localities</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Clusters</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Geographical</group>
+		<name>Districts</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Miscellaneous</group>
+		<name>Educational Levels</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Profiles</group>
+		<name>Saints</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Training</group>
+		<name>Trainees</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Training</group>
+		<name>Training Centers</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Training</group>
+		<name>Training Levels</name>
+	</applicationModule>
+
+	<applicationModule>
+		<group>Training</group>
+		<name>Trainings</name>
+	</applicationModule>
+	
+</applicationModules>

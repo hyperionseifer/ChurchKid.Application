@@ -48,7 +48,7 @@ namespace ChurchKid.Data.Entities.SaintProfile
         public string BirthPlace { get; set; }
 
         [MaxLength(10)]
-        public int HomeBldgNo { get; set; }
+        public string HomeBldgNo { get; set; }
         
         [MaxLength(10)]
         public string HomeNo { get; set; }
@@ -66,10 +66,10 @@ namespace ChurchKid.Data.Entities.SaintProfile
         public string HomeDistrict { get; set; }
 
         [MaxLength(100)]
-        public int HomeCity { get; set; }
+        public string HomeCity { get; set; }
 
         [MaxLength(100)]
-        public int HomeRegion { get; set; }
+        public string HomeRegion { get; set; }
 
         [ForeignKey("HomeCountry")]
         public int HomeCountryId { get; set; }
@@ -112,10 +112,13 @@ namespace ChurchKid.Data.Entities.SaintProfile
         [MaxLength(100)]
         public string MotherLastName { get; set; }
 
+        [MaxLength(100)]
         public string SpouseFirstName { get; set; }
 
+        [MaxLength(100)]
         public string SpouseMiddleName { get; set; }
 
+        [MaxLength(100)]
         public string SpouseLastName { get; set; }
 
         public int BaptismalMonth { get; set; }

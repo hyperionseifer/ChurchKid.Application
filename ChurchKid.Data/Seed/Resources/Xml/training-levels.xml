@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<trainingLevels>
+
+	<trainingLevel>
+		<name>FT - 1</name>
+		<description></description>
+	</trainingLevel>
+
+	<trainingLevel>
+		<name>FT - 2</name>
+		<description></description>
+	</trainingLevel>
+
+	<trainingLevel>
+		<name>FT - 3</name>
+		<description></description>
+	</trainingLevel>
+
+	<trainingLevel>
+		<name>FT - 4</name>
+		<description></description>
+	</trainingLevel>
+
+	<trainingLevel>
+		<name>NZ</name>
+		<description>Nazarite</description>
+	</trainingLevel>
+
+	<trainingLevel>
+		<name>COLLEGEAN</name>
+		<description></description>
+	</trainingLevel>
+	
+</trainingLevels>

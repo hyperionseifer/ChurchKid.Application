@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<educationalLevels>
+
+	<educationalLevel>
+		<name>Nursery</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Preschool</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Kindergarten</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Elementary</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Highschool</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Junior Highschool</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Senior Highschool</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Vocational</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>College</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Masteral</name>
+		<description></description>
+	</educationalLevel>
+
+	<educationalLevel>
+		<name>Doctorate</name>
+		<description></description>
+	</educationalLevel>
+
+</educationalLevels>

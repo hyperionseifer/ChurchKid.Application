@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localities>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<name>Malabon</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<name>Caloocan</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<name>Valenzuela</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<name>Navotas</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Manila</name>
+		<description></description>
+	</locality>
+	
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Quezon City</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Marikina</name>
+		<description></description>
+	</locality>
+	
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>San Juan</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Pasig</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Mandaluyong</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Makati</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Taguig</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Pasay</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Parañaque</name>
+		<description></description>
+	</locality>
+
+	<locality>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group />
+		<name>Muntinlupa</name>
+		<description></description>
+	</locality>
+	
+</localities>

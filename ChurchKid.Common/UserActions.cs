@@ -1,16 +1,29 @@
 ﻿using System;
 using System.Configuration;
+using System.IO;
+using System.Reflection;
 
 namespace ChurchKid.Common
 {
-    public abstract class UserActions
+    public abstract class UserActions : ConfigurationBased
     {
+
+        private static void SetConfigurationPath()
+        {
+            var uriAssemblyFolder = new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase));
+            var appPath = uriAssemblyFolder.LocalPath;
+            var properPath = string.Format("{0}\\{1}.dll", appPath, Assembly.GetExecutingAssembly().GetName().Name);
+
+            if (!ConfigurationPath.Equals(properPath))
+                ConfigurationPath = properPath;
+        }
 
         public static string Add
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Add"] ?? "Add");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Add"].Value ?? "Add");
             }
         }
 
@@ -18,7 +31,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Edit"] ?? "Edit");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Edit"].Value ?? "Edit");
             }
         }
 
@@ -26,7 +40,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Delete"] ?? "Delete");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Delete"].Value ?? "Delete");
             }
         }
 
@@ -34,7 +49,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Print"] ?? "Print");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Print"].Value ?? "Print");
             }
         }
 
@@ -42,7 +58,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Approve"] ?? "Approve");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Approve"].Value ?? "Approve");
             }
         }
 
@@ -50,7 +67,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Decline"] ?? "Decline");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Decline"].Value ?? "Decline");
             }
         }
 
@@ -58,7 +76,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return (ConfigurationManager.AppSettings["UserActions.Draft"] ?? "Draft");
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Draft"].Value ?? "Draft");
             }
         }
 
@@ -66,7 +85,8 @@ namespace ChurchKid.Common
         {
             get
             {
-                return ConfigurationManager.AppSettings["UserActions.Backup"];
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Backup"].Value ?? "Backup");
             }
         }
 

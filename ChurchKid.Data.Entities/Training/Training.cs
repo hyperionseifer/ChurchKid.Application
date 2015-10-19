@@ -11,7 +11,7 @@ namespace ChurchKid.Data.Entities.Training
         public int TrainingId { get; set; }
 
         [ForeignKey("TrainingCenter")]
-        public int TraininCenterId { get; set; }
+        public int TrainingCenterId { get; set; }
 
         public virtual TrainingCenter TrainingCenter { get; set; }
 

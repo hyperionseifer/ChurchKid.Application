@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<applicationModuleGroups>
+
+	<applicationModuleGroup>
+		<name>Administration</name>	
+	</applicationModuleGroup>
+
+	<applicationModuleGroup>
+		<name>General</name>
+	</applicationModuleGroup>
+	
+	<applicationModuleGroup>
+		<name>Geographical</name>
+	</applicationModuleGroup>
+
+	<applicationModuleGroup>
+		<name>Miscellaneous</name>
+	</applicationModuleGroup>
+
+	<applicationModuleGroup>
+		<name>Profiles</name>
+	</applicationModuleGroup>
+
+	<applicationModuleGroup>
+		<name>Training</name>
+	</applicationModuleGroup>
+	
+</applicationModuleGroups>

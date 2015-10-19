@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<districts>
+
+	<district>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<locality>Malabon</locality>
+		<cluster>Cluster 1</cluster>
+		<name>District 1</name>
+		<description></description>		
+	</district>
+
+	<district>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<locality>Malabon</locality>
+		<cluster>North Caloocan</cluster>
+		<name>District 18</name>
+		<description></description>
+	</district>
+
+</districts>

@@ -10,10 +10,10 @@ namespace ChurchKid.Data.Entities.Training
         [Key]
         public int TrainingAttendeeId { get; set; }
 
-        [ForeignKey("Training")]
-        public int TrainingId { get; set; }
+        [ForeignKey("TrainingClass")]
+        public int TrainingClassId { get; set; }
 
-        public virtual Training Training { get; set; }
+        public virtual TrainingClass TrainingClass { get; set; }
 
         [ForeignKey("Trainee")]
         public int TraineeId { get; set; }

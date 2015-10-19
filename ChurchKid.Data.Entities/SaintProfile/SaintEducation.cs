@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ChurchKid.Data.Entities.SaintProfile
 {
-    public class SaintEducationalBackground
+    public class SaintEducation
     {
 
         [Key]
-        public int SaintEducationalBackgroundId { get; set; }
+        public int SaintEducationId { get; set; }
 
         [ForeignKey("Saint")]
         public int SaintId { get; set; }

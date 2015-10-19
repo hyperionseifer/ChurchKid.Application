@@ -53,11 +53,12 @@
     <Compile Include="Miscellaneous\EducationalLevel.cs" />
     <Compile Include="NamedDescriptiveEntity.cs" />
     <Compile Include="SaintProfile\Saint.cs" />
-    <Compile Include="SaintProfile\SaintEducationalBackground.cs" />
+    <Compile Include="SaintProfile\SaintEducation.cs" />
     <Compile Include="Training\Trainee.cs" />
     <Compile Include="Training\Training.cs" />
     <Compile Include="Training\TrainingAttendee.cs" />
     <Compile Include="Training\TrainingCenter.cs" />
+    <Compile Include="Training\TrainingClass.cs" />
     <Compile Include="Training\TrainingLevel.cs" />
     <Compile Include="UserProfile\ApplicationUser.cs" />
     <Compile Include="Geographic\Country.cs" />

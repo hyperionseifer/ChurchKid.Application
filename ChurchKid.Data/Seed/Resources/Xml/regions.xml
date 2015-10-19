@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<regions>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>NCR</name>
+		<description>National Capital Region</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>CAR</name>
+		<description>Cordillera Administrative Region</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>Region I</name>
+		<description>Ilocos Region</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>Region II</name>
+		<description>Cagayan Valley</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>Region III</name>
+		<description>Central Luzon</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>Region IV-A</name>
+		<description>CALABARZON</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>Region IV-B</name>
+		<description>MIMAROPA</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<name>Region V</name>
+		<description>Bicol Region</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Visayas</island>
+		<name>Region VI</name>
+		<description>Western Visayas</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Visayas</island>
+		<name>Region VII</name>
+		<description>Central Visayas</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Visayas</island>
+		<name>Region VIII</name>
+		<description>Eastern Visayas</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Mindanao</island>
+		<name>Region IX</name>
+		<description>Zamboanga Peninsula</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Mindanao</island>
+		<name>Region X</name>
+		<description>Northern Mindanao</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Mindanao</island>
+		<name>Region XI</name>
+		<description>Davao Region</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Mindanao</island>
+		<name>Region XII</name>
+		<description>SOCCSKSARGEN</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Mindanao</island>
+		<name>Region XIII</name>
+		<description>Caraga</description>
+	</region>
+
+	<region>
+		<country>Philippines</country>
+		<island>Mindanao</island>
+		<name>ARMM</name>
+		<description>Autonomous Region in Muslim Mindanao</description>
+	</region>
+	
+</regions>

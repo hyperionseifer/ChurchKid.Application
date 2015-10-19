@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localityGroups>
+
+	<localityGroup>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<name>CAMANAVA</name>
+		<description>Caloocan, Malabon, Navotas and Valenzuela</description>	
+	</localityGroup>
+	
+</localityGroups>

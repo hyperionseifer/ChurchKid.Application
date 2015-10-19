@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<clusters>
+
+	<cluster>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<locality>Malabon</locality>
+		<name>Cluster 1</name>
+		<description></description>
+	</cluster>
+
+	<cluster>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<locality>Caloocan</locality>
+		<name>North Caloocan</name>
+		<description></description>
+	</cluster>
+
+	<cluster>
+		<country>Philippines</country>
+		<island>Luzon</island>
+		<region>NCR</region>
+		<group>CAMANAVA</group>
+		<locality>Caloocan</locality>
+		<name>South Caloocan</name>
+		<description></description>
+	</cluster>
+	
+</clusters>

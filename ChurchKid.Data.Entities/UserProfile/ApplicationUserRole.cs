@@ -7,7 +7,7 @@ namespace ChurchKid.Data.Entities.UserProfile
     {
 
         [Key]
-        public int Id { get; set; }
+        public int ApplicationUserRoleId { get; set; }
 
         [ForeignKey("ApplicationUser")]
         public int UserId { get; set; }

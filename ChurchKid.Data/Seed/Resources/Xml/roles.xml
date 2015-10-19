@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<roles>
+
+	<role>
+		<name>System Administrator</name>
+		<allowDelete>0</allowDelete>
+		<administratorRole>1</administratorRole>
+		<privileges></privileges>
+	</role>
+
+	<role>
+		<name>Training Administrator</name>
+		<allowDelete>1</allowDelete>
+		<administratorRole>0</administratorRole>
+		<privileges>
+			<privilege>VIEWTRAININGCENTERS</privilege>
+			<privilege>ADDTRAININGCENTERS</privilege>
+			<privilege>EDITTRAININGCENTERS</privilege>
+			<privilege>DELETETRAININGCENTERS</privilege>
+			<privilege>VIEWTRAININGLEVELS</privilege>
+			<privilege>ADDTRAININGLEVELS</privilege>
+			<privilege>EDITTRAININGLEVELS</privilege>
+			<privilege>DELETETRAININGLEVELS</privilege>
+			<privilege>VIEWTRAININGS</privilege>
+			<privilege>ADDTRAININGS</privilege>
+			<privilege>EDITTRAININGS</privilege>
+			<privilege>DELETETRAININGS</privilege>
+			<privilege>CLOSETRAININGS</privilege>
+			<privilege>ADDTRAININGPARTICIPANTS</privilege>
+			<privilege>EDITTRAININGPARTICIPANTS</privilege>
+			<privilege>DELETETRAININGPARTICIPANTS</privilege>
+			<privilege>STATETRAININGPARTICIPANTS</privilege>
+			<privilege>VIEWSAINTS</privilege>
+			<privilege>ADDSAINTS</privilege>
+			<privilege>EDITSAINTS</privilege>
+			<privilege>DELETESAINTS</privilege>
+			<privilege>ADDSAINTEDUCATIONS</privilege>
+			<privilege>EDITSAINTEDUCATIONS</privilege>
+			<privilege>DELETESAINTEDUCATIONS</privilege>
+			<privilege>VIEWUSERS</privilege>
+			<privilege>ADDUSERS</privilege>
+			<privilege>EDITUSERS</privilege>
+			<privilege>DELETEUSERS</privilege>
+		</privileges>
+	</role>
+
+	<role>
+		<name>Data Entry</name>
+		<allowDelete>1</allowDelete>
+		<administratorRole>0</administratorRole>
+		<privileges>
+			<privilege>VIEWTRAININGCENTERS</privilege>
+			<privilege>ADDTRAININGCENTERS</privilege>
+			<privilege>EDITTRAININGCENTERS</privilege>
+			<privilege>DELETETRAININGCENTERS</privilege>
+			<privilege>VIEWTRAININGLEVELS</privilege>
+			<privilege>ADDTRAININGLEVELS</privilege>
+			<privilege>EDITTRAININGLEVELS</privilege>
+			<privilege>DELETETRAININGLEVELS</privilege>
+			<privilege>VIEWCOUNTRIES</privilege>
+			<privilege>ADDCOUNTRIES</privilege>
+			<privilege>EDITCOUNTRIES</privilege>
+			<privilege>DELETECOUNTRIES</privilege>
+			<privilege>VIEWISLANDS</privilege>
+			<privilege>ADDISLANDS</privilege>
+			<privilege>EDITISLANDS</privilege>
+			<privilege>DELETEISLANDS</privilege>
+			<privilege>VIEWIREGIONS</privilege>
+			<privilege>EDITREGIONS</privilege>
+			<privilege>DELETEREGIONS</privilege>
+			<privilege>VIEWLOCALITYGROUPS</privilege>
+			<privilege>ADDLOCALITYGROUPS</privilege>
+			<privilege>EDITLOCALITYGROUPS</privilege>
+			<privilege>DELETELOCALITYGROUPS</privilege>
+			<privilege>VIEWLOCALITIES</privilege>
+			<privilege>ADDLOCALITIES</privilege>
+			<privilege>EDITLOCALITIES</privilege>
+			<privilege>DELETELOCALITIES</privilege>
+			<privilege>VIEWCLUSTERS</privilege>
+			<privilege>ADDCLUSTERS</privilege>
+			<privilege>EDITCLUSTERS</privilege>
+			<privilege>DELETECLUSTERS</privilege>
+			<privilege>VIEWDISTRICTS</privilege>
+			<privilege>ADDDISTRICTS</privilege>
+			<privilege>EDITDISTRICTS</privilege>
+			<privilege>DELETEDISTRICTS</privilege>
+			<privilege>VIEWEDUCATIONALLEVELS</privilege>
+			<privilege>ADDEDUCATIONALLEVELS</privilege>
+			<privilege>EDITEDUCATIONALLEVELS</privilege>
+			<privilege>DELETEEDUCATIONALLEVELS</privilege>
+		</privileges>
+	</role>
+	
+</roles>

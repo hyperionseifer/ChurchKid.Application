@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 namespace ChurchKid.Data.Entities.UserProfile
 {
     public class Role : NamedEntity
@@ -16,6 +17,8 @@ namespace ChurchKid.Data.Entities.UserProfile
         public bool AllowDelete { get; set; }
 
         public bool AdministrativeRole { get; set; }
-    
+
+        public virtual ICollection<RolePrivilege> RolePrivileges { get; set; }
+
     }
 }

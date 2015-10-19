@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<users>
+
+	<user>
+		<username>churchkid</username>
+		<password>C!0ud987</password>
+		<firstName>Church</firstName>
+		<middleName></middleName>
+		<lastName>Kid</lastName>
+		<nickName></nickName>
+		<email>malabon.church.kid@gmail.com</email>
+		<roles>
+			<role>System Administrator</role>
+		</roles>
+	</user>
+
+	<user>
+		<username>trainingadmin</username>
+		<password>Password987</password>
+		<firstName>Training</firstName>
+		<middleName></middleName>
+		<lastName>Administrator</lastName>
+		<nickName></nickName>
+		<email>ftt.training.admin@gmail.com</email>
+		<roles>
+			<role>Training Administrator</role>
+		</roles>
+	</user>
+
+	<user>
+		<username>dataentry</username>
+		<password>Password987</password>
+		<firstName>Data</firstName>
+		<middleName></middleName>
+		<lastName>Entry</lastName>
+		<nickName></nickName>
+		<email>ftt.data.entry@gmail.com</email>
+		<roles>
+			<role>Data Entry</role>
+		</roles>
+	</user>
+	
+</users>

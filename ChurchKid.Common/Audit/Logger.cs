@@ -61,14 +61,11 @@ namespace ChurchKid.Common.Audit
         {
             get
             {
-                var logFile = ConfigurationManager.AppSettings["LogFile"]; ;
-                if (string.IsNullOrEmpty(logFile))
-                    logFile = "ChurchKid.Logs.xml";
-
+                var logFile = ConfigurationManager.AppSettings["LogFile"] ?? "ChurchKid.Logs.xml";
                 var directory = Path.GetDirectoryName(logFile);
                 if (string.IsNullOrEmpty(directory))
                     directory = Environment.CurrentDirectory;
-
+                
                 var directoryExists = true;
 
                 if (!Directory.Exists(directory))

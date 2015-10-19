@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ChurchKid.Common;
+using System;
+using System.Configuration;
 using System.IO;
 using System.Reflection;
 
-namespace ChurchKid.Common.Audit
+namespace ChurchKid.Data.Configuration
 {
-    public abstract class LogEntryType : ConfigurationBased
+    public abstract class ConnectionStringConfiguration : ConfigurationBased
     {
 
         private static void SetConfigurationPath()
@@ -17,31 +19,23 @@ namespace ChurchKid.Common.Audit
                 ConfigurationPath = properPath;
         }
 
-        public static string Error
+        public static ConnectionStringSettings DefaultConnectionString
         {
             get
             {
                 SetConfigurationPath();
-                return (AppSettingsConfiguration.Settings["LogEntryTypes.Error"].Value ?? "Error");
+                return ConnectionStringsConfiguration.ConnectionStrings["DefaultConnection"];
             }
         }
 
-        public static string Info
+        public static ConnectionStringSettings FTTConnectionString
         {
             get
             {
                 SetConfigurationPath();
-                return (AppSettingsConfiguration.Settings["LogEntryTypes.Info"].Value ?? "Info");
+                return ConnectionStringsConfiguration.ConnectionStrings["FTTConnection"];
             }
         }
 
-        public static string Warning
-        {
-            get
-            {
-                SetConfigurationPath();
-                return (AppSettingsConfiguration.Settings["LogEntryTypes.Warning"].Value ?? "Warning");
-            }
-        }
     }
 }

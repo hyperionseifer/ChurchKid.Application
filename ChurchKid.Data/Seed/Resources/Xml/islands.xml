@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<islands>
+
+	<island>
+		<country>Philippines</country>
+		<name>Luzon</name>
+	</island>
+
+	<island>
+		<country>Philippines</country>
+		<name>Visayas</name>
+	</island>
+
+	<island>
+		<country>Philippines</country>
+		<name>Mindanao</name>
+	</island>
+	
+</islands>
