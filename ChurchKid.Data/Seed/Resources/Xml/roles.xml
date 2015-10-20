@@ -5,7 +5,9 @@
 		<name>System Administrator</name>
 		<allowDelete>0</allowDelete>
 		<administratorRole>1</administratorRole>
-		<privileges></privileges>
+		<privileges>
+			<privilege>UNRESTRICTED</privilege>
+		</privileges>
 	</role>
 
 	<role>

@@ -27,24 +27,30 @@ namespace ChurchKid.Data.Seed
             if (connection == null)
                 return;
 
-            if (!connection.ApplicationModuleGroups.Any())
+            try
             {
-
-                var data = XElement.Parse(SeedData);
-                var moduleGroups = from appModuleGroup in data.Elements("applicationModuleGroup")
-                                   select new
-                                   {
-                                       Name = (string)appModuleGroup.Element("name")
-                                   };
-
-                if (moduleGroups.Any())
+                if (!connection.ApplicationModuleGroups.Any())
                 {
-                    try
+
+                    var data = XElement.Parse(SeedData);
+                    var moduleGroups = from appModuleGroup in data.Elements("applicationModuleGroup")
+                                       select new
+                                       {
+                                           Name = (string)appModuleGroup.Element("name")
+                                       };
+
+                    if (moduleGroups.Any())
                     {
+                        var administratorId = 0;
+                        var administrator = connection.ApplicationUsers.FirstOrDefault(u => "churchkid".Equals(u.Username, StringComparison.InvariantCultureIgnoreCase));
+                        if (administrator != null)
+                            administratorId = administrator.UserId;
+
                         var groups = from moduleGroup in moduleGroups
                                      select new ApplicationModuleGroup()
                                      {
-                                         Name = moduleGroup.Name
+                                         Name = moduleGroup.Name,
+                                         CreatedById = administratorId
                                      };
 
                         using (var transaction = new TransactionScope())
@@ -55,11 +61,11 @@ namespace ChurchKid.Data.Seed
                             Logger.Write(string.Format(ApplicationStrings.msgSeededData, ApplicationStrings.dataApplicationModuleGroups));
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        Logger.Write(ex);
-                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Logger.Write(ex);
             }
         }
 

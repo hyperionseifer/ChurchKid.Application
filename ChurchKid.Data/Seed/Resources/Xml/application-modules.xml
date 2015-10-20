@@ -28,7 +28,7 @@
 
 	<applicationModule>
 		<group>Geographical</group>
-		<name>Locality Groups</name>
+		<name>Locality groups</name>
 	</applicationModule>
 
 	<applicationModule>

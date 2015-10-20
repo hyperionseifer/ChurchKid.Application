@@ -12,9 +12,7 @@ namespace ChurchKid.Common.Audit
             var uriAssemblyFolder = new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase));
             var appPath = uriAssemblyFolder.LocalPath;
             var properPath = string.Format("{0}\\{1}.dll", appPath, Assembly.GetExecutingAssembly().GetName().Name);
-
-            if (!ConfigurationPath.Equals(properPath))
-                ConfigurationPath = properPath;
+            ConfigurationPath = properPath;
         }
 
         public static string Error

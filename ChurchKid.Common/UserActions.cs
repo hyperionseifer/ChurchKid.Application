@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 
 namespace ChurchKid.Common
@@ -13,9 +15,7 @@ namespace ChurchKid.Common
             var uriAssemblyFolder = new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase));
             var appPath = uriAssemblyFolder.LocalPath;
             var properPath = string.Format("{0}\\{1}.dll", appPath, Assembly.GetExecutingAssembly().GetName().Name);
-
-            if (!ConfigurationPath.Equals(properPath))
-                ConfigurationPath = properPath;
+            ConfigurationPath = properPath;
         }
 
         public static string Add
@@ -88,6 +88,44 @@ namespace ChurchKid.Common
                 SetConfigurationPath();
                 return (AppSettingsConfiguration.Settings["UserActions.Backup"].Value ?? "Backup");
             }
+        }
+
+        public static string Login
+        {
+            get
+            {
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Login"].Value ?? "Login");
+            }
+        }
+
+        public static string Logout
+        {
+            get
+            {
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Logout"].Value ?? "Logout");
+            }
+        }
+
+        public static string Unknown
+        {
+            get
+            {
+                SetConfigurationPath();
+                return (AppSettingsConfiguration.Settings["UserActions.Unknown"].Value ?? "Unknown");
+            }
+        }
+
+        public static bool IsValidAction(string action)
+        {
+            var actions = new string[] {
+                Add, Edit, Delete, 
+                Print, Approve, Decline, Draft,
+                Backup, Login, Logout, Unknown
+            };
+
+            return actions.Any(a => a.Equals(action, StringComparison.InvariantCultureIgnoreCase));
         }
 
     }

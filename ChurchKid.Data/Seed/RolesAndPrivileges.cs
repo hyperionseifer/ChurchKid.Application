@@ -1,4 +1,5 @@
 ﻿using ChurchKid.Common.Audit;
+using ChurchKid.Common.Resources;
 using ChurchKid.Common.Utilities.Cryptography;
 using ChurchKid.Data.Entities.UserProfile;
 using System;
@@ -80,9 +81,7 @@ namespace ChurchKid.Data.Seed
                             {
                                 var newPersistedRole = connection.Roles.Add(new Role()
                                 {
-                                    Name = Cryptographer.Encrypt(systemRole.Name),
-                                    AllowDelete = systemRole.AllowDelete,
-                                    AdministrativeRole = systemRole.AdministrativeRole
+                                    Name = Cryptographer.Encrypt(systemRole.Name)
                                 });
 
                                 connection.SaveChanges();
@@ -101,6 +100,7 @@ namespace ChurchKid.Data.Seed
                             }
 
                             transaction.Complete();
+                            Logger.Write(string.Format(ApplicationStrings.msgSeededData, ApplicationStrings.dataRoles));
                         }
                     }
                 }

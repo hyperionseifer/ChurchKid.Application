@@ -70,6 +70,60 @@ namespace ChurchKid.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Application Modules.
+        /// </summary>
+        public static string dataApplicationModules {
+            get {
+                return ResourceManager.GetString("dataApplicationModules", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Countries.
+        /// </summary>
+        public static string dataCountries {
+            get {
+                return ResourceManager.GetString("dataCountries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Application User Roles.
+        /// </summary>
+        public static string dataRoles {
+            get {
+                return ResourceManager.GetString("dataRoles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Application Users.
+        /// </summary>
+        public static string dataUsers {
+            get {
+                return ResourceManager.GetString("dataUsers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No available application module groups..
+        /// </summary>
+        public static string errNoModuleGroupsAvailable {
+            get {
+                return ResourceManager.GetString("errNoModuleGroupsAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No application user role has been specified into user: {0}..
+        /// </summary>
+        public static string errNoUserRoleSpecified {
+            get {
+                return ResourceManager.GetString("errNoUserRoleSpecified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seeded default {0} into the database..
         /// </summary>
         public static string msgSeededData {

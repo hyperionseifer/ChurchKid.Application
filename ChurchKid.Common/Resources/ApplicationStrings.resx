@@ -120,6 +120,24 @@
   <data name="dataApplicationModuleGroups" xml:space="preserve">
     <value>Application Module Groups</value>
   </data>
+  <data name="dataApplicationModules" xml:space="preserve">
+    <value>Application Modules</value>
+  </data>
+  <data name="dataCountries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="dataRoles" xml:space="preserve">
+    <value>Application User Roles</value>
+  </data>
+  <data name="dataUsers" xml:space="preserve">
+    <value>Application Users</value>
+  </data>
+  <data name="errNoModuleGroupsAvailable" xml:space="preserve">
+    <value>No available application module groups.</value>
+  </data>
+  <data name="errNoUserRoleSpecified" xml:space="preserve">
+    <value>No application user role has been specified into user: {0}.</value>
+  </data>
   <data name="msgSeededData" xml:space="preserve">
     <value>Seeded default {0} into the database.</value>
   </data>

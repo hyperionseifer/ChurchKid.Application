@@ -16,6 +16,9 @@ namespace ChurchKid.Data.Entities.UserProfile
         [MaxLength(50)]
         public string Username { get; set; }
 
+        [MaxLength(150)]
+        public string Password { get; set; }
+
         public int SaintId { get; set; }
 
         [EmailAddress, MaxLength(100)]
@@ -24,25 +27,22 @@ namespace ChurchKid.Data.Entities.UserProfile
         public virtual ICollection<ApplicationUserRole> ApplicationUserRoles { get; set; }
 
         [NotMapped]
-        private ICollection<string> privileges;
-
-        public void ReloadPrivileges()
+        public bool IsAdministrator
         {
-            privileges = new List<string>();
-
-            var userRoles = ApplicationUserRoles.ToList();
-
-            foreach (var userRole in userRoles)
+            get
             {
-                var rolePrivileges = (from privilege in userRole.Role.RolePrivileges
-                                      select privilege).ToList();
+                if (ApplicationUserRoles == null)
+                    return false;
 
-                foreach (var rolePrivilege in rolePrivileges)
+                var userRoles = ApplicationUserRoles;
+
+                foreach (var userRole in userRoles)
                 {
-                    var privilegeValue = Cryptographer.Decrypt(rolePrivilege.Privilege.PrivilegeOption);
-                    if (!privileges.Contains(privilegeValue))
-                        privileges.Add(privilegeValue);
+                    if (userRole.Role.IsAdministrator)
+                        return true;
                 }
+
+                return false;
             }
         }
 
@@ -51,19 +51,20 @@ namespace ChurchKid.Data.Entities.UserProfile
             if (ApplicationUserRoles == null) 
                 return false;
 
-            var userRoles = ApplicationUserRoles.ToList();
+            var userRoles = ApplicationUserRoles;
 
-            var administratorRoles = from role in userRoles
-                                     where role.Role.AdministrativeRole == true
-                                     select role;
+            foreach (var userRole in userRoles)
+            {
+                if (userRole.Role.IsAdministrator)
+                    return true;
+                else
+                {
+                    if (userRole.Role.HasPrivilege(privilegeKey))
+                        return true;
+                }
+            }
 
-            if (administratorRoles.Any())
-                return true;
-
-            if (privileges == null)
-                ReloadPrivileges();
-
-            return privileges.Contains(privilegeKey);
+            return false;
         }
 
     }

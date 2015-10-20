@@ -71,8 +71,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Seed\ApplicationModuleGroups.cs" />
+    <Compile Include="Seed\ApplicationModules.cs" />
+    <Compile Include="Seed\Countries.cs" />
     <Compile Include="Seed\ISeeder.cs" />
     <Compile Include="Seed\RolesAndPrivileges.cs" />
+    <Compile Include="Seed\Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
