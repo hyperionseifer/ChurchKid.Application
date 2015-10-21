@@ -79,6 +79,15 @@ namespace ChurchKid.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clusters.
+        /// </summary>
+        public static string dataClusters {
+            get {
+                return ResourceManager.GetString("dataClusters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Countries.
         /// </summary>
         public static string dataCountries {
@@ -88,11 +97,83 @@ namespace ChurchKid.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Districts.
+        /// </summary>
+        public static string dataDistricts {
+            get {
+                return ResourceManager.GetString("dataDistricts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Educational Levels.
+        /// </summary>
+        public static string dataEducationalLevels {
+            get {
+                return ResourceManager.GetString("dataEducationalLevels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Islands.
+        /// </summary>
+        public static string dataIslands {
+            get {
+                return ResourceManager.GetString("dataIslands", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Localities.
+        /// </summary>
+        public static string dataLocalities {
+            get {
+                return ResourceManager.GetString("dataLocalities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Locality Groups.
+        /// </summary>
+        public static string dataLocalityGroups {
+            get {
+                return ResourceManager.GetString("dataLocalityGroups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regions.
+        /// </summary>
+        public static string dataRegions {
+            get {
+                return ResourceManager.GetString("dataRegions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Application User Roles.
         /// </summary>
         public static string dataRoles {
             get {
                 return ResourceManager.GetString("dataRoles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training Centers.
+        /// </summary>
+        public static string dataTrainingCenters {
+            get {
+                return ResourceManager.GetString("dataTrainingCenters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training Levels.
+        /// </summary>
+        public static string dataTrainingLevels {
+            get {
+                return ResourceManager.GetString("dataTrainingLevels", resourceCulture);
             }
         }
         
@@ -129,6 +210,15 @@ namespace ChurchKid.Common.Resources {
         public static string msgSeededData {
             get {
                 return ResourceManager.GetString("msgSeededData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seeded &apos;{0}&apos; as a part of default {1}. .
+        /// </summary>
+        public static string msgSeededDataSpecific {
+            get {
+                return ResourceManager.GetString("msgSeededDataSpecific", resourceCulture);
             }
         }
     }

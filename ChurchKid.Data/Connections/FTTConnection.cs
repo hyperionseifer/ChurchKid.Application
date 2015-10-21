@@ -1,5 +1,6 @@
 ﻿using ChurchKid.Data.Configuration;
 using ChurchKid.Data.Entities.Training;
+using ChurchKid.Data.Seed;
 using System.Data.Entity;
 
 namespace ChurchKid.Data.Connections
@@ -10,6 +11,9 @@ namespace ChurchKid.Data.Connections
         public FTTConnection() 
             : base(ConnectionStringConfiguration.FTTConnectionString.Name)
         {
+            Seeders.Add(new TrainingCenters(this));
+            Seeders.Add(new TrainingLevels(this));
+
             Database.SetInitializer<FTTConnection>(new FTTConnectionInitializer());
         }
 

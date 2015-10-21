@@ -75,18 +75,24 @@ namespace ChurchKid.Data.Seed
                     }
 
                     var module = connection.ApplicationModules.FirstOrDefault(m => "Countries".Equals(m.Name, StringComparison.InvariantCultureIgnoreCase));
-
+                    
                     using (var transaction = new TransactionScope())
                     {
-                        connection.Countries.AddRange((from country in countries
-                                                       orderby country.Name
-                                                       select country));
+                        var persistedCountries = connection.Countries.AddRange(from country in countries
+                                                                               orderby country.Name
+                                                                               select country);
                         connection.SaveChanges();
+                        
                         if (administrator != null &&
                             module != null)
-                            connection.LogAction(administrator, module, UserActions.Add,
-                                                 string.Format(ApplicationStrings.msgSeededData, ApplicationStrings.dataCountries));
+                        {
+                            foreach (var persistedCountry in persistedCountries)
+                                connection.LogAction(administrator, module, UserActions.Add, persistedCountry.CountryId,
+                                                     string.Format(ApplicationStrings.msgSeededDataSpecific, persistedCountry.Name, ApplicationStrings.dataCountries.ToLower()));
 
+                        }
+
+                        connection.SaveChanges();
                         transaction.Complete();
                         Logger.Write(string.Format(ApplicationStrings.msgSeededData, ApplicationStrings.dataCountries));
                     }

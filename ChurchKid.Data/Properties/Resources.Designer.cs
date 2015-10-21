@@ -174,8 +174,8 @@ namespace ChurchKid.Data.Properties {
         ///		&lt;island&gt;Luzon&lt;/island&gt;
         ///		&lt;region&gt;NCR&lt;/region&gt;
         ///		&lt;group&gt;CAMANAVA&lt;/group&gt;
-        ///		&lt;locality&gt;Malabon&lt;/locality&gt;
-        ///		&lt;cluster&gt;North Caloocan&lt;/cluster&gt;        /// [rest of string was truncated]&quot;;.
+        ///		&lt;locality&gt;Caloocan&lt;/locality&gt;
+        ///		&lt;cluster&gt;North Caloocan&lt;/cluster&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Districts {
             get {
@@ -334,6 +334,9 @@ namespace ChurchKid.Data.Properties {
         ///		&lt;name&gt;System Administrator&lt;/name&gt;
         ///		&lt;allowDelete&gt;0&lt;/allowDelete&gt;
         ///		&lt;administratorRole&gt;1&lt;/administratorRole&gt;
+        ///		&lt;privileges&gt;
+        ///			&lt;privilege&gt;UNRESTRICTED&lt;/privilege&gt;
+        ///		&lt;/privileges&gt;
         ///	&lt;/role&gt;
         ///
         ///	&lt;role&gt;
@@ -343,12 +346,33 @@ namespace ChurchKid.Data.Properties {
         ///		&lt;privileges&gt;
         ///			&lt;privilege&gt;VIEWTRAININGCENTERS&lt;/privilege&gt;
         ///			&lt;privilege&gt;ADDTRAININGCENTERS&lt;/privilege&gt;
-        ///			&lt;privilege&gt;EDITTRAININGCENTERS&lt;/privilege&gt;
-        ///			&lt;privilege&gt;DELETETRAININGCENTERS&lt;/privilege [rest of string was truncated]&quot;;.
+        ///			&lt;privilege&gt;EDITTR [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Roles {
             get {
                 return ResourceManager.GetString("Roles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;trainingCenters&gt;
+        ///
+        ///	&lt;trainingCenter&gt;
+        ///		&lt;country&gt;Philippines&lt;/country&gt;
+        ///		&lt;region&gt;NCR&lt;/region&gt;
+        ///		&lt;locality&gt;Malabon&lt;/locality&gt;
+        ///		&lt;name&gt;Training Center - Church in Malabon&lt;/name&gt;
+        ///		&lt;address&gt;19 Liwayway Street, Acacia, Malabon City&lt;/address&gt;
+        ///		&lt;contactNo&gt;2872225&lt;/contactNo&gt;
+        ///		&lt;email&gt;fttmalabon@yahoo.com&lt;/email&gt;
+        ///	&lt;/trainingCenter&gt;
+        ///	
+        ///&lt;/trainingCenters&gt;.
+        /// </summary>
+        internal static string TrainingCenters {
+            get {
+                return ResourceManager.GetString("TrainingCenters", resourceCulture);
             }
         }
         

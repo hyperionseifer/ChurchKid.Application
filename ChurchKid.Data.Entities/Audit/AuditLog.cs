@@ -35,6 +35,8 @@ namespace ChurchKid.Data.Entities.Audit
         [Required, MaxLength(20)]
         public string Action { get; set; }
 
+        public int ReferenceId { get; set; }
+
         [Required]
         public string Details { get; set; }
 

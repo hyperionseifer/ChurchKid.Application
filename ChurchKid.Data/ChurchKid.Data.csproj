@@ -72,9 +72,18 @@
     </Compile>
     <Compile Include="Seed\ApplicationModuleGroups.cs" />
     <Compile Include="Seed\ApplicationModules.cs" />
+    <Compile Include="Seed\Clusters.cs" />
     <Compile Include="Seed\Countries.cs" />
+    <Compile Include="Seed\Districts.cs" />
+    <Compile Include="Seed\EducationalLevels.cs" />
     <Compile Include="Seed\ISeeder.cs" />
+    <Compile Include="Seed\Islands.cs" />
+    <Compile Include="Seed\Localities.cs" />
+    <Compile Include="Seed\LocalityGroups.cs" />
+    <Compile Include="Seed\Regions.cs" />
     <Compile Include="Seed\RolesAndPrivileges.cs" />
+    <Compile Include="Seed\TrainingCenters.cs" />
+    <Compile Include="Seed\TrainingLevels.cs" />
     <Compile Include="Seed\Users.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -106,8 +115,11 @@
     <Content Include="Seed\Resources\Xml\islands.xml" />
     <Content Include="Seed\Resources\Xml\localities.xml" />
     <Content Include="Seed\Resources\Xml\locality-groups.xml" />
-    <Content Include="Seed\Resources\Xml\regions.xml" />
+    <Content Include="Seed\Resources\Xml\regions.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Seed\Resources\Xml\roles.xml" />
+    <Content Include="Seed\Resources\Xml\training-centers.xml" />
     <Content Include="Seed\Resources\Xml\training-levels.xml" />
     <Content Include="Seed\Resources\Xml\users.xml" />
   </ItemGroup>

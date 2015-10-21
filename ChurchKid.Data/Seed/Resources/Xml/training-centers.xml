@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<trainingCenters>
+
+	<trainingCenter>
+		<country>Philippines</country>
+		<region>NCR</region>
+		<locality>Malabon</locality>
+		<name>Training Center - Church in Malabon</name>
+		<address>19 Liwayway Street, Acacia, Malabon City</address>
+		<contactNo>2872225</contactNo>
+		<email>fttmalabon@yahoo.com</email>
+	</trainingCenter>
+	
+</trainingCenters>

@@ -38,7 +38,6 @@ namespace ChurchKid.Data
 
         protected virtual void OnSeed()
         {
-            
             if (Seeders == null)
                 Seeders = new List<ISeeder>();
 
@@ -47,6 +46,13 @@ namespace ChurchKid.Data
             Seeders.Add(new ApplicationModuleGroups(this));
             Seeders.Add(new ApplicationModules(this));
             Seeders.Add(new Countries(this));
+            Seeders.Add(new Islands(this));
+            Seeders.Add(new Regions(this));
+            Seeders.Add(new LocalityGroups(this));
+            Seeders.Add(new Localities(this));
+            Seeders.Add(new Clusters(this));
+            Seeders.Add(new Districts(this));
+            Seeders.Add(new EducationalLevels(this));
 
             Database.SetInitializer<DatabaseConnection>(new DatabaseInitializer());
         }
@@ -117,7 +123,17 @@ namespace ChurchKid.Data
             LogAction(user, module, action, details, string.Empty);
         }
 
+        public void LogAction(ApplicationUser user, ApplicationModule module, string action, int referenceId, string details)
+        {
+            LogAction(user, module, action, referenceId, details, string.Empty);
+        }
+
         public void LogAction(ApplicationUser user, ApplicationModule module, string action, string details, string performedAt)
+        {
+            LogAction(user, module, action, 0, details, string.Empty);
+        }
+
+        public void LogAction(ApplicationUser user, ApplicationModule module, string action, int referenceId, string details, string performedAt)
         {
             var machineIpOrHostName = (string.IsNullOrEmpty(performedAt) ? Environment.MachineName : performedAt);
             var userAction = (!UserActions.IsValidAction(action) ? UserActions.Unknown : action);
@@ -126,11 +142,10 @@ namespace ChurchKid.Data
                 Action = userAction,
                 ApplicationModuleId = module.ApplicationModuleId,
                 UserId = user.UserId,
+                ReferenceId = referenceId,
                 Details = details,
                 PerformedAt = machineIpOrHostName
             });
-
-            SaveChanges();
         }
 
     }

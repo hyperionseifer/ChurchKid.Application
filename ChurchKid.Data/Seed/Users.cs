@@ -5,8 +5,6 @@ using ChurchKid.Data.Entities.UserProfile;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
 using System.Xml.Linq;
 
@@ -52,12 +50,10 @@ namespace ChurchKid.Data.Seed
                                                    }).ToList()
                                       };
 
-
                     if (systemUsers.Any())
                     {
                         var persistedRoles = connection.Roles.ToList();
                         var administratorId = 0;
-
                         using (var transaction = new TransactionScope())
                         {
                             foreach (var systemUser in systemUsers)
