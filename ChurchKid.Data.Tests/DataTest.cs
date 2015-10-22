@@ -7,9 +7,10 @@ using ChurchKid.Data.Connections;
 namespace ChurchKid.Data.Tests
 {
     [TestClass]
-    public class Data
+    public class DataTest
     {
-        [TestMethod]
+        [TestMethod, 
+        TestCategory("Data")]
         public void CreateDatabaseIfNotExistsAndSeedData()
         {
             using (var connection = new FTTConnection())

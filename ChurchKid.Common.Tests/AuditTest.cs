@@ -10,21 +10,24 @@ namespace ChurchKid.Common.Tests
     public class AuditTest
     {
 
-        [TestMethod]
+        [TestMethod,
+         TestCategory("Audit")]
         public void LogFileShouldBeCreated()
         {
             var logFile = Logger.LogFile;
             Assert.IsTrue(File.Exists(logFile));
         }
 
-        [TestMethod]
+        [TestMethod,
+         TestCategory("Audit")]
         public void LogEntryShouldBeSaved()
         {
             var logEntry = Logger.Write("This is a sample entry.");
             Assert.IsNotNull(logEntry);
         }
 
-        [TestMethod]
+        [TestMethod,
+         TestCategory("Audit")]
         public void LogEntryShouldBeSearchable()
         {
             Logger.Clear();
@@ -34,7 +37,8 @@ namespace ChurchKid.Common.Tests
             Assert.IsNotNull(searchedEntry);
         }
 
-        [TestMethod]
+        [TestMethod,
+         TestCategory("Audit")]
         public void LogEntriesShouldBeSearchable()
         {
             Logger.Clear();
